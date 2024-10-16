@@ -13,6 +13,7 @@ body {
 }
 header{
     display: block;
+    
 }
 /* Navigation Bar */
 .navbar {
@@ -45,9 +46,11 @@ header{
 }
 
 .nav-links li a:hover {
-    color: #ff0080;
+    background-color: #ff0080;
+    color: #f4f4f4;
+    border-radius: 20px;
 }
-. a {
+.nav-links li a {
     padding: 10px 20px;
     border-radius: 25px;
     margin: 0 10px;
@@ -68,6 +71,7 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    height: 500px;
 }
 
 .header-content {
@@ -201,11 +205,14 @@ header {
     gap: 10px;
 }
 
-.search-form input {
+.search-form select {
     padding: 10px;
     width: 200px;
+    background-color: #F2F4FF;
+    color: #1D275F;
     border-radius: 25px;
     border: 1px solid #ccc;
+    font-weight: bold;
 }
 
 .search-form button {
@@ -263,11 +270,14 @@ header {
 .event-card .event-c p {
     font-size: 14px;
     margin-bottom: 15px;
+    color: #6A6A6A;
 }
 
 .event-card .event-c span {
-    font-size: 14px;
-    color: #ff0080;
+    font-size: 24px;
+    color: #242565;
+    font-weight: bold;
+
 }
 .event-load{
     grid-column: 1/-1;
@@ -298,7 +308,57 @@ header {
 }
 .brands .logos{
     display: flex;
+    margin-top: 30px;
+    /* justify-content: space-around; */
+    height: 100px;
     justify-content: center;
+}
+.log_google{
+    
+    width: 130px;
+    height: 60px;
+    margin-left: 30px;
+
+}
+/* Blog Section  */
+.blog-section{
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    display: block;
+}
+.blog-section .bg-section h1{
+    color: #242565;
+}
+.blog-section .bg-section p{
+    color: #6A6A6A;
+}
+.blog-section .blog-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+} 
+.event-blog{
+    display: flex;
+}
+.event-blog div{
+    margin-left: 10px;
+}
+.event-card .event-blog .event-c-text h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #242565;
+}
+
+.event-card .event-blog .event-c-text p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #6A6A6A;
+    align-items: flex-end;
+    margin-bottom: 0px;
 }
 /* Footer Section */
 footer {
@@ -355,7 +415,9 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #ff0080;
+    background-color: #ff0080;
+    color: #f4f4f4;
+    border-radius: 20px;
 }
 
 .footer-subscribe h3 {
