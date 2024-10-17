@@ -198,7 +198,9 @@ header {
     justify-content: space-between;
     display: flex;
 }
-
+ .search-h h2{
+    color:#242565 ;
+}
 .search-form {
     display: flex;
     justify-content: center;
@@ -452,7 +454,13 @@ footer {
     cursor: pointer;
     font-size: 14px;
 }
-
+.active{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: #ff0080;
+    color: white;
+}
 .footer-bottom {
     text-align: center;
     margin-top: 40px;
@@ -463,4 +471,147 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 15px;
     margin-top: 20px;
+}
+/* page home  */
+/*About Section */
+.back-section{
+    margin: 300px 0px;
+
+    padding:100px 0px;
+    background-color: #d8c2f5;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    z-index: 2;
+    height: 100px;
+}
+.about-section .text-b{
+    display: flex;
+    justify-content: center;
+}
+.about-section .text-b p{
+    font-size: 90px;
+    color: #242565;
+    
+}
+.medium{
+    display: grid;
+    grid-template-columns: repeat(2,240px);
+    top: 900px;
+    padding-left: 300px;
+    position: Absolute;
+    display: flex;
+    width: 1500px;
+}
+.medium .text {
+    height: 500px;width: 500px;
+    border-radius: 25px;
+    background-color: #F2F4FF;
+    margin-left: 20px;
+    padding: 50px;
+}
+.medium .text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.medium .text p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+/* page speakers */
+.box-div{
+    border-bottom: white solid 2px;
+    background-color: transparent;
+}
+.box-div p{
+    font-size: 25px;
+    color: white;
+
+}
+.space{
+    bottom: 1000px;
+}
+/* partie des grid */
+.speak-section{
+    position: relative;
+}
+.speak-section .search-s{
+    padding: 50px;
+}
+.speak-section .search-v h2{
+    color:#242565 ;
+}
+.speak-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    top: -650px;
+    z-index: 5;
+    position: relative;
+    margin: 0 auto;
+    max-height: 3000px;
+}
+/* Login page */
+.box-item-log{
+    text-align: center;
+}
+.box-item-log p{
+    font-size: 44px;
+    color: white;
+    margin-left: 420px;
+}
+.login-section{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+            /* padding: 100px 0; */
+}
+.log-div{
+    align-items: center;
+    /* justify-content: center; */
+    width: 721px;
+    height: 445px;
+    background-color: #5522CC;
+    margin-block: 50px;
+    display: flex;
+    border-radius: 20px;
+    margin-inline: auto;
+}
+
+.log-div .log-form{
+    width: 420px;
+    height: 443px;
+    border-radius: 20px;
+    background-color: #EEE1FF;
+    padding: 50px 20px;
+    margin-inline: auto;
+    justify-content: center;
+}
+
+.log-div .log-form h1{
+    text-align: center;
+    font-size: 50px;
+}
+.log-div .log-form input{
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #f4f4f4;
+    font-size: larger;
+    padding-left: 20px;
+}
+.log-div .log-form .login{
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #5522CC;
 }
