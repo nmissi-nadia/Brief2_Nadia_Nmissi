@@ -525,6 +525,9 @@ footer {
     border-bottom: white solid 2px;
     background-color: transparent;
 }
+@media box-div{
+    
+}
 .box-div p{
     font-size: 25px;
     color: white;
@@ -614,4 +617,109 @@ footer {
     height: 40px;
     border-radius: 15px;
     background-color: #5522CC;
+}
+/* Responsive Styles */
+
+/* Tablettes (768px - 1024px) */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-right {
+        flex-direction: column;
+    }
+}
+
+/* Mobile Normale (max-width: 768px) */
+@media (max-width: 768px) {
+    /* resolution du navbar */
+    .navbar {
+        flex-direction: column;
+    
+    }
+    .navbar .nav-links{
+        margin-top: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+    .nav-links li {
+        margin-bottom: 20px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-container .header-image{
+        display: none;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logos img {
+        max-width: 70px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right {
+        align-items: center;
+    }
+}
+
+/* petit Mobile  (max-width: 480px) */
+@media (max-width: 480px) {
+    .header-container {
+        padding: 10px;
+    }
+
+    .events-grid, .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logos img {
+        max-width: 50px;
+    }
+
+    .footer-container {
+        padding: 10px;
+    }
+
+    .footer-subscribe form {
+        flex-direction: column;
+    }
 }
