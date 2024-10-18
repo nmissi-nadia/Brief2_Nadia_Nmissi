@@ -476,7 +476,6 @@ footer {
 /*About Section */
 .back-section{
     margin: 300px 0px;
-
     padding:100px 0px;
     background-color: #d8c2f5;
     text-align: center;
@@ -782,7 +781,7 @@ footer {
         /* pour la page about */
 
         .back-section{
-            margin-bottom: 175px;
+            margin-bottom: 75px;
         }
     
         .about-section .text-b p{

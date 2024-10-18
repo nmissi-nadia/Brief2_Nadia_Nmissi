@@ -17,7 +17,7 @@ Pour terminer, j'ai intégré le **footer** (pied de page) sur toutes les pages,
 
 #   Hébergement
 
-Une fois le développement terminé, j'ai procédé à l'hébergement du site en utilisant **GitHub Pages** et **Vercel**. Ces deux plateformes m'ont permis de rendre le site accessible en ligne et d'assurer une performance optimale, notamment grâce aux capacités de déploiement rapide et à la gestion du versioning de GitHub. Vous pouvez consulter le site via les liens suivants : [lien GitHub Pages] et [lien Vercel].
+Une fois le développement terminé, j'ai procédé à l'hébergement du site en utilisant **GitHub Pages** et **Vercel**. Ces deux plateformes m'ont permis de rendre le site accessible en ligne et d'assurer une performance optimale, notamment grâce aux capacités de déploiement rapide et à la gestion du versioning de GitHub. Vous pouvez consulter le site via les liens suivants : [[lien GitHub Pages](https://nmissi-nadia.github.io/Brief2_Nadia_Nmissi/)] et [[lien Vercel](https://brief2-nadia-nmissi.vercel.app/index.html)].
 
 
 #  Responsivité (Bonus)
