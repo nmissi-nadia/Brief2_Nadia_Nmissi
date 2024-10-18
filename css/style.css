@@ -45,10 +45,10 @@ header{
     transition: color 0.3s;
 }
 
-.nav-links li a:hover {
-    background-color: #ff0080;
-    color: #f4f4f4;
-    border-radius: 20px;
+.nav-links li a:hover  {
+    background-color: #ff0080 !important;
+    color: #f4f4f4 !important;
+    border-radius: 20px !important;
 }
 .nav-links li a {
     padding: 10px 20px;
@@ -666,6 +666,12 @@ footer {
     .footer-right {
         flex-direction: column;
     }
+
+    .nav-links li a:hover  {
+        background-color: #ff0080 !important;
+        color: #f4f4f4 !important;
+        border-radius: 20px !important;
+    }
 }
 
 /* petite tablette (max-width: 768px) */
@@ -786,17 +792,21 @@ footer {
             display: none;
         }
         .medium{
-            padding-left: 10px;
+            padding-left: 50px;
             height: 500px;
             width: 90%;
-            top: 1100px;
-        }
+            top: 740px;
+            bottom: 1100px !important;
+            
+           
+     }
         .medium .text{
             background-image: url(../img/about1.png) !important;
             background-repeat: no-repeat;
             margin: 0px;
             width: 100%;
             padding-top: 20px;
+
          }
 
          .medium .text p{
@@ -806,7 +816,15 @@ footer {
          .medium .text h1{
             font-size: 25px;
          }
+         .about-section .back-section{
+            margin-top: 140px !important;
+         }
         /***************/
+        .nav-links li a:hover  {
+            background-color: #ff0080 !important;
+            color: #f4f4f4 !important;
+            border-radius: 20px !important;
+        }
 }
 
 /* Mobile  (max-width: 480px) */
@@ -924,4 +942,9 @@ footer {
     .footer-subscribe form button{
        border-radius: 15px;
     } 
+    .nav-links li a:hover  {
+        background-color: #ff0080 !important;
+        color: #f4f4f4 !important;
+        border-radius: 20px !important;
+    }
 }
