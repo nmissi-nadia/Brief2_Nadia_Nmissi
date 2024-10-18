@@ -22,7 +22,7 @@ Une fois le développement terminé, j'ai procédé à l'hébergement du site en
 
 #  Responsivité (Bonus)
 
-J'ai travailler aussi sur la partie de reponsivité en 4 résolution (Desktop/tablette/Mobile Normale/Mobile Petite) pour que mon s'adapte avec chaque résolution d'écran 
+J'ai travailler aussi sur la partie de reponsivité en 4 résolution (Desktop/tablette/petite tablette/Mobile) pour que mon site s'adapte avec chaque résolution d'écran .
 
 
 En résumé, ce projet a été mené en plusieurs étapes, de la planification avec Trello, au maquettage avec Figma, jusqu'à l'intégration finale en HTML et CSS. Grâce à une bonne organisation et une utilisation efficace des outils de conception et de développement, j'ai pu créer un site web fonctionnel et en adéquation avec les attentes du brief.

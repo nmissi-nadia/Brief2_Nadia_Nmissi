@@ -59,7 +59,7 @@ header{
 }
 /* Header Section */
 header {
-    background: linear-gradient(to right , rgb(159, 14, 111,0.7), rgba(41, 4, 248, 0.8)) , url('img/head.jpg') no-repeat center center/cover;
+    background: linear-gradient(to right , rgb(159, 14, 111,0.7), rgba(41, 4, 248, 0.8)) , url('../img/head.jpg') no-repeat center center/cover;
     color: white;
     padding: 50px 0;
     text-align: center;
@@ -539,6 +539,7 @@ footer {
 /* partie des grid */
 .speak-section{
     position: relative;
+    margin-bottom: 50px;
 }
 .speak-section .search-s{
     padding: 50px;
@@ -551,7 +552,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     max-width: 1200px;
-    top: -650px;
+    top: -800px;
     z-index: 5;
     position: relative;
     margin: 0 auto;
@@ -627,10 +628,23 @@ footer {
         text-align: center;
     }
 
+    .navbar .nav-links  li {
+        
+     
+        width: 150px;
+    }
+
+    .navbar .nav-links  li a{
+        /* width: 400px; */
+        font-size: 15px;
+        width: 50px;
+    }
+
     .header-container {
         flex-direction: column;
         align-items: center;
         padding: 20px;
+        height: 600px;
     }
 
     .events-grid {
@@ -641,6 +655,9 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .speak-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .logos {
         flex-wrap: wrap;
         justify-content: center;
@@ -651,7 +668,7 @@ footer {
     }
 }
 
-/* Mobile Normale (max-width: 768px) */
+/* petite tablette (max-width: 768px) */
 @media (max-width: 768px) {
     /* resolution du navbar */
     .navbar {
@@ -671,12 +688,34 @@ footer {
         margin-bottom: 20px;
     }
 
+  
+    /* resolution du header */
+
     .header-container {
         flex-direction: column;
         text-align: center;
+        height: 300px;
     }
     .header-container .header-image{
         display: none;
+    }
+
+    .box{
+        width: 80%;
+    }
+
+
+    .box .box-item .box-title{
+        font-size: 15px;
+    }
+
+    .box .box-item  input{
+        
+        width: 100px;
+    }
+
+    .search-section{
+        display: block;
     }
 
     .events-grid {
@@ -684,37 +723,192 @@ footer {
     }
 
     .blog-grid {
+        /* display: block; */
+        grid-template-columns: 1fr !important;
+    }
+    .speak-grid{
         grid-template-columns: 1fr;
     }
 
     .logos img {
-        max-width: 70px;
+        max-width: 80px;
     }
 
     .footer-container {
         flex-direction: column;
         text-align: center;
     }
-
+    
+    .footer-subscribe form button{
+        height: 37px;
+        font-size: 10px;
+    } 
     .footer-right {
         align-items: center;
     }
-}
+    /* login page */
 
-/* petit Mobile  (max-width: 480px) */
-@media (max-width: 480px) {
-    .header-container {
-        padding: 10px;
+    .login-section .log-div .img-lig{
+        display: none !important;
     }
 
+    .login-section .log-div .img-lig img{
+        display: none !important;
+    }
+
+    .box-item-log p{
+        margin-left: 40% !important;
+    }
+
+    .logim{
+        display: none;
+    }
+
+    .log-div{
+        width: 355px !important;
+    }
+
+    .log-form{
+        width: 350px !important;
+        height: 400px;
+    }
+
+        /* pour la page about */
+
+        .back-section{
+            margin-bottom: 175px;
+        }
+    
+        .about-section .text-b p{
+            font-size: 30px;
+        }
+        .medium .image{
+            display: none;
+        }
+        .medium{
+            padding-left: 10px;
+            height: 500px;
+            width: 90%;
+            top: 1100px;
+        }
+        .medium .text{
+            background-image: url(../img/about1.png) !important;
+            background-repeat: no-repeat;
+            margin: 0px;
+            width: 100%;
+            padding-top: 20px;
+         }
+
+         .medium .text p{
+            font-weight:bold ;
+         }
+    
+         .medium .text h1{
+            font-size: 25px;
+         }
+        /***************/
+}
+
+/* Mobile  (max-width: 480px) */
+@media (max-width: 480px) {
+    .navbar .nav-links  li a{
+        font-size: 12px;
+    }
+    .header-container {
+        padding: 10px;
+        height: 300px;
+    }
+
+    .header-content h1{
+        font-size: 25px;
+    }
+    .box{
+        width: 70%;
+        height: 200px;
+    }
+
+
+    .box .box-item .box-title{
+        font-size: 10px;
+    }
+
+    .box .box-item  input{
+        
+        width: 40px;
+    }
+
+    .box .box-item select{
+        
+        width: 19px !important;
+    }
+
+    /* pour la page speakers */
+    .box .box-item .box-div{
+        width: 30px;
+        font-size: 15px;
+    }
+    /****************/
+    /* pour la page about */
+
+    .back-section{
+        margin-bottom: 175px;
+    }
+
+    .about-section .text-b p{
+        font-size: 30px;
+    }
+    .medium .image{
+        display: none;
+    }
+    .medium{
+        padding-left: 10px;
+        height: 500px;
+        width: 300px;
+        top: 800px;
+    }
+    .medium .text{
+        background-image: url(../img/about.png) ;
+        background-repeat: no-repeat;
+        margin: 0px;
+     }
+
+     .medium .text h1{
+        font-size: 15px;
+     }
+    /***************/
+    /* pour la page login */
+    .login-box{
+        max-height: 100px;
+        display: none  !important;
+    }
+    .login-section{
+
+        width: 60% !important;
+        height: 700px;
+    }
+    .login-section .log-form{
+        width: 100%;
+    }
+
+    .login-section .log-form h1{
+        font-size: 20px;
+    }
+
+    /* ************** */
+    .search-form select{
+        width: 90px;
+    }
     .events-grid, .blog-grid {
         grid-template-columns: 1fr;
     }
 
     .logos img {
-        max-width: 50px;
+        max-width: 80px;
     }
 
+    .blog-section{
+        margin-top: 40px;
+    }
     .footer-container {
         padding: 10px;
     }
@@ -722,4 +916,12 @@ footer {
     .footer-subscribe form {
         flex-direction: column;
     }
+
+    .footer-subscribe form input{
+        border-radius: 15px;
+    } 
+
+    .footer-subscribe form button{
+       border-radius: 15px;
+    } 
 }
